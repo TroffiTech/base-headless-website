@@ -11,22 +11,22 @@
 	align-items: center;
 }
 
-// .brandLine::after {
-// 	content: "";
-// 	display: block;
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100vw;
-// 	height: 100%;
-// 	background: linear-gradient(
-// 		90deg,
-// 		var(--background-color) 0%,
-// 		rgba(255, 255, 255, 0) 45%,
-// 		rgba(255, 255, 255, 0) 55%,
-// 		var(--background-color) 100%
-// 	);
-// }
+.brandLine::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		var(--background-color) 0%,
+		rgba(255, 255, 255, 0) 45%,
+		rgba(255, 255, 255, 0) 55%,
+		var(--background-color) 100%
+	);
+}
 
 @keyframes scrolling {
 	0% {
