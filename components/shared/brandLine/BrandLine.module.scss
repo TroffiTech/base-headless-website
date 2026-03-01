@@ -8,48 +8,44 @@
 	overflow: hidden;
 
 	display: flex;
-	gap: 80px;
+	align-items: center;
 }
 
-.brandLine::after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100%;
-	background: linear-gradient(
-		90deg,
-		var(--background-color) 0%,
-		rgba(255, 255, 255, 0) 45%,
-		rgba(255, 255, 255, 0) 55%,
-		var(--background-color) 100%
-	);
-}
+// .brandLine::after {
+// 	content: "";
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	height: 100%;
+// 	background: linear-gradient(
+// 		90deg,
+// 		var(--background-color) 0%,
+// 		rgba(255, 255, 255, 0) 45%,
+// 		rgba(255, 255, 255, 0) 55%,
+// 		var(--background-color) 100%
+// 	);
+// }
 
 @keyframes scrolling {
 	0% {
 		transform: translateX(0px);
 	}
 
-	50% {
-		transform: translateX(-1300px);
-	}
-
-	99% {
-		transform: translateX(-2600px);
+	100% {
+		transform: translateX(-100%);
 	}
 }
 
 .brandLine_group {
-	top: 0px;
-	left: 0px;
-	width: 2600px;
+	width: fit-content;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 80px;
+	padding: 0 40px !important;
 
-	will-change: transform;
 	animation: scrolling 15s linear infinite;
 }
 

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./BrandLine.module.scss";
 
 export default function BrandLine() {
